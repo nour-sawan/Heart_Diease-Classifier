@@ -1,30 +1,76 @@
-# Heart Disease Classification
+❤️ Heart Disease Classification
+This is a-friendly machine learning project that predicts whether a patient is likely to have heart disease, using Python and supervised learning models.
 
-This is a heart disease classification project using Python and machine learning.
+📝 Project Description
+This project is based on a public heart disease dataset and demonstrates a full end-to-end machine learning pipeline. It includes:
 
-## 📝 Project Description
+📥 Data loading using pandas
 
-The project uses a public heart disease dataset to build a binary classification model that predicts whether a patient has heart disease or not.  
-It walks through a complete machine learning workflow:
+📊 Exploratory Data Analysis (EDA) using Seaborn and Matplotlib
 
-- Data loading and preprocessing  
-- Exploratory Data Analysis (EDA) with visualizations  
-- Train/test split  
-- Model training using **Random Forest** and **Logistic Regression**  
-- **Hyperparameter tuning** using **RandomizedSearchCV**  
-- Performance evaluation using **precision, recall, F1-score, confusion matrix, classification report**  
-- Model saving using **Joblib**
+✂️ Train-test split using train_test_split from sklearn
 
-This is a-friendly project for anyone learning supervised machine learning in Python.
+🤖 Model training with:
 
----
+Random Forest Classifier
 
-## 🛠️ How to Run
+Logistic Regression
 
-1. Make sure you have Python 3.8+ installed.  
-2. Create and activate a virtual environment:
+🧪 Model evaluation using:
 
-   ```bash
-   python -m venv heart
-   source heart/bin/activate      # On Linux/Mac
-   .\heart\Scripts\activate       # On Windows PowerShell
+1-Accuracy
+
+2-Precision
+
+3-Recall
+
+4-F1 Score
+
+5-Confusion matrix
+
+6-Classification report
+
+🔍 Hyperparameter tuning using RandomizedSearchCV for the Random Forest model
+
+💾 Model saving with joblib
+
+✅ This project is ideal for learning binary classification, model evaluation metrics, and hyperparameter tuning using scikit-learn.
+
+🛠️ How to Run
+Make sure you have Python 3.8+ installed
+
+Clone the repository and navigate to the project directory
+
+Create and activate a virtual environment:
+
+bash
+Copy
+Edit
+python -m venv heart
+source heart/bin/activate      # On Linux/Mac
+.\heart\Scripts\activate       # On Windows
+Install the required libraries:
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Open the Jupyter Notebook:
+
+bash
+Copy
+Edit
+jupyter notebook "Simple-ML Heart.ipynb"
+📁 Project Structure
+bash
+Copy
+Edit
+heart-disease-classification/
+│
+├── data/
+│   └── heart-disease.csv               # Dataset
+│
+├── Simple-ML Heart.ipynb               # Main notebook with full ML pipeline
+├── requirements.txt                    # List of dependencies
+└── README.md                           # Project description
+
